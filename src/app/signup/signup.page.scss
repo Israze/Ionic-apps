@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.logo-container{
+    width: 200px;
+
+
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+ion-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+
+ion-button{
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-start:15px;
+    --padding-end:15px;
+}
+
+

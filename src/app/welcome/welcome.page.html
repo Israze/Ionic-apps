@@ -1,0 +1,45 @@
+
+<ion-content>
+    <div class="container">
+        <div class="logo-container">
+            <ion-img class="logo" src="assets/logo.png"></ion-img>       
+        </div>
+
+        <div class="button-container">
+            <ion-button color="tertiary" routerLink="/signup">Sign up</ion-button>
+            <ion-button color="tertiary" routerLink="/signin">Sign in</ion-button>
+        </div>
+
+        <div class="terms">
+            <p>By signing in, you agree to our <a (click)="terms_clicked()"> terms and conditions</a></p>
+        </div>
+
+        
+        
+        <ion-modal [isOpen]="IsModalOpen" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+            <ng-template>
+            <ion-header>
+                <ion-toolbar>
+                <ion-title>Terms and conditions</ion-title>
+                <ion-buttons slot="end">
+                    <ion-button (click)="IsModalOpen = false;">Close</ion-button>
+                </ion-buttons>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
+                reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
+                dicta.
+                </p>
+            </ion-content>
+            </ng-template>
+        </ion-modal>
+          
+        
+        
+    </div>
+    
+
+    
+</ion-content>

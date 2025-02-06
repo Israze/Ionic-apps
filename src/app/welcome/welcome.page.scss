@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.logo-container{
+    width: 250px;
+
+    
+}
+
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around  ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    ion-button{
+        padding: 10px;
+    }
+}
+
+.terms{
+    margin-top: 40px;
+    width: 70%;
+}
+

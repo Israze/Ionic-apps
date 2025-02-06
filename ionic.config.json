@@ -1,0 +1,7 @@
+{
+  "name": "Razed-bank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,59 @@
+
+
+
+  <div class="container">
+    <ion-card>
+      <div class="logo-container">
+        <ion-img class="logo" src="assets/logo.png"></ion-img>       
+      </div>
+  
+      <ion-list [inset]="true">
+        <ion-item>
+          <ion-input label="Name" label-placement="floating" fill="" placeholder="Enter Your Name">
+            <ion-icon slot="start" name="person" aria-hidden="true"></ion-icon>
+          </ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input label="Phone Number" label-placement="floating" fill="" placeholder="Enter Phone number">
+            <ion-icon slot="start" name="call" aria-hidden="true"></ion-icon>
+          </ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input label="Email" label-placement="floating" fill="" placeholder="Enter mail">
+            <ion-icon slot="start" name="mail" aria-hidden="true"></ion-icon>
+          </ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input labelPlacement="stacked" label="Password" fill="" type="Password" placeholder="Enter Password">
+            <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <!-- Empty ion item -->
+        </ion-item>
+  
+      </ion-list>
+
+      
+
+      <div class="button-container">
+        <ion-button color="danger" routerLink="/welcome">Cancel</ion-button>
+        <ion-button color="tertiary">Submit</ion-button>
+      </div>
+    
+      
+    </ion-card>
+  </div>
+
+  
+
+  
+
+  
+
+
