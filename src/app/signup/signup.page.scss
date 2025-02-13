@@ -36,4 +36,23 @@ ion-button{
     --padding-end:15px;
 }
 
+.error{
+    display: none;
+    
+    
+}
 
+.visible{
+    display: block;
+    color: red;
+    padding-left:15px;
+}
+
+.disabled {
+    pointer-events: none; /* Prevents clicks */
+    opacity: 0.5; /* Makes the button look inactive */
+    cursor: not-allowed; /* Shows a 'not-allowed' cursor */
+  }
+
+
+  
