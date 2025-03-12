@@ -1,20 +1,152 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+ 
+
+  <ion-menu contentId="main-content" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list lines="none">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label>{{this.currentUser.name}}</ion-label>
+        </ion-item>
+      </ion-list>
+      
+      
+    </ion-content>
+  </ion-menu>
+
+  <div id="main-content">
+    <ion-header color="dark">
+      <ion-toolbar class="ion-padding-top">
+
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+
+
+        <ion-buttons slot="end">
+          <ion-menu-button color="dark"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
   </div>
+
+
+  <div class="card-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{this.currentUser.balance}}</ion-card-title>
+        <ion-card-subtitle color="tertiary">Balance</ion-card-subtitle>
+        
+      </ion-card-header>
+    
+    <ion-card-content>
+      <div class="button-container">
+        <ion-button class="action-buttons" fill="solid">Transfer</ion-button>
+        <ion-button class="action-buttons" fill="solid">Recieve</ion-button>
+      </div>
+      
+    </ion-card-content>
+    
+    </ion-card>
+  
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="tertiary"> <u>Transaction history</u> </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+
+        <ion-item>
+          
+          <div class="detail-container">
+            <div class="icon">
+              <svg width="30px" height="30px" viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="##6d74f3" stroke-width="0.00016" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-1.6" y="-1.6" width="19.20" height="19.20" rx="9.6" fill="#e0e2ff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14 2H5.50003L4.00003 3.5L6.83581 6.33579L0.585815 12.5858L3.41424 15.4142L9.66424 9.16421L12.5 12L14 10.5L14 2Z" fill="#8086f4"></path> </g></svg>
+            </div>
+  
+            <div class="desc">
+              <div class="name">
+                <p>Transfer to Ariyo Ayomide</p>
+              </div>
+              <div class="date">
+                <p>13th Mar, 2025</p>
+              </div>
+              
+            </div>
+  
+            <div class="amount">
+              <p>₦ 5000</p>
+            </div>
+          </div>
+          
+        </ion-item>
+
+        <ion-item>
+          
+          <div class="detail-container">
+            <div class="icon">
+              <svg width="30px" height="30px" viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="##6d74f3" stroke-width="0.00016" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-1.6" y="-1.6" width="19.20" height="19.20" rx="9.6" fill="#e0e2ff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14 2H5.50003L4.00003 3.5L6.83581 6.33579L0.585815 12.5858L3.41424 15.4142L9.66424 9.16421L12.5 12L14 10.5L14 2Z" fill="#8086f4"></path> </g></svg>
+            </div>
+  
+            <div class="desc">
+              <div class="name">
+                <p>Transfer to Ariyo Ayomide</p>
+              </div>
+              <div class="date">
+                <p>13th Mar, 2025</p>
+              </div>
+              
+            </div>
+  
+            <div class="amount">
+              <p>₦ 5000</p>
+            </div>
+          </div>
+          
+        </ion-item>
+
+        <ion-item>
+          
+          <div class="detail-container">
+            <div class="icon">
+              <svg width="30px" height="30px" viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="##6d74f3" stroke-width="0.00016" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-1.6" y="-1.6" width="19.20" height="19.20" rx="9.6" fill="#e0e2ff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14 2H5.50003L4.00003 3.5L6.83581 6.33579L0.585815 12.5858L3.41424 15.4142L9.66424 9.16421L12.5 12L14 10.5L14 2Z" fill="#8086f4"></path> </g></svg>
+            </div>
+  
+            <div class="desc">
+              <div class="name">
+                <p>Transfer to Ariyo Ayomide</p>
+              </div>
+              <div class="date">
+                <p>13th Mar, 2025</p>
+              </div>
+              
+            </div>
+  
+            <div class="amount">
+              <p>₦ 5000</p>
+            </div>
+          </div>
+          
+        </ion-item>
+
+        
+      </ion-list>
+
+
+      <ion-list>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>

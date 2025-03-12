@@ -10,13 +10,13 @@
     <ion-list [inset]="true">
     
       <ion-item>
-        <ion-input label="Email" label-placement="floating" fill="solid" placeholder="Enter mail">
+        <ion-input [formControl]="email" label="Email" label-placement="floating" fill="solid" placeholder="Enter mail">
           <ion-icon slot="start" name="mail" aria-hidden="true"></ion-icon>
         </ion-input>
       </ion-item>
     
       <ion-item>
-        <ion-input labelPlacement="floating" label="Password" fill="solid" type="Password" placeholder="Enter Password">
+        <ion-input [formControl]="password" labelPlacement="floating" label="Password" fill="solid" type="Password" placeholder="Enter Password">
           <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
           <ion-input-password-toggle slot="end"></ion-input-password-toggle>
         </ion-input>
@@ -32,7 +32,7 @@
 
     <div class="button-container">
       <ion-button color="danger" routerLink="/welcome">Cancel</ion-button>
-      <ion-button color="tertiary">Sign in</ion-button>
+      <ion-button color="tertiary" (click)="OnSubmit()">Sign in</ion-button>
     </div>
   
     

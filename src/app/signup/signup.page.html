@@ -37,7 +37,7 @@
       </div>
     
       <ion-item>
-        <ion-input [formControl]="password" labelPlacement="stacked" label="Password" fill="" type="Password" placeholder="Enter Password">
+        <ion-input [formControl]="password" labelPlacement="stacked" label="Password" fill="" type="password" placeholder="Enter Password">
           <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
           <ion-input-password-toggle slot="end"></ion-input-password-toggle>
         </ion-input>
@@ -57,7 +57,7 @@
 
     <div class="button-container">
       <ion-button  color="danger" routerLink="/welcome">Cancel</ion-button>
-      <ion-button color="tertiary"  [class.disabled]="name.invalid || email.invalid || password.invalid || phone.invalid " (click)="onSubmit()">Submit</ion-button>
+      <ion-button color="tertiary"  [class.disabled]="name.invalid || email.invalid || password.invalid || phone.invalid " (click)="Submit_cred()">Submit</ion-button>
     </div>  
   
     
